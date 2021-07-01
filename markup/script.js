@@ -1,0 +1,1 @@
+let checkbox = document.querySelectorAll('input')[0]

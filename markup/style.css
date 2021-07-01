@@ -5,11 +5,30 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Bebas Neue' , sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--dark-mode-bg-color);
+}
+
+h1 {
+    color: var(--dark-mode-text-color);
+    letter-spacing: 1.2px;
+}
+:root {
+    --dark-mode-bg-color: #111318;
+    --light-mode-bg-color: #f5f5f5;
+
+    --dark-mode-text-color: #f5f5f5;
+    --light-mode-bg-color: #111318;
+
+    --dark-mode-shadow-color: rgba(26, 210, 235, 0.3);
+    --light-mode-shadow-color: rgb(0, 0, 0, .3);
+}
+element {
+    --dark-mode-bg-color:#111318;
 }
 
 .container {
@@ -17,13 +36,39 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.line {
+    height: 3px;
+    background-color: #f5f5f5;
+    border-radius: 1.5px;
+    margin-bottom: 15px;
+}
+
+/* ======== BUTTON STYLES ======== */
+
 button {
-    padding: 5px 20px;
+    padding: 7px 17px;
+    width: 135px;
     font-size: 16px;
     border-radius: 35px;
     border-style: none;
     background-color: #1fdaf3;
     font-family: 'Roboto';
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px var(--dark-mode-shadow-color);
 }
 
 button:hover {
@@ -32,4 +77,11 @@ button:hover {
 }
 button:active {
     background-color: #28e5f3;
+    box-shadow: 0 3px 6px rgba(0,0,0, .2);
+}
+
+/* ======== BUTTON STYLES ======== */
+
+.gallery {
+    margin: 15px 0 0 0;
 }
