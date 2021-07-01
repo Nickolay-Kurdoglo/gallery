@@ -1,1 +1,5 @@
-let checkbox = document.querySelectorAll('input')[0]
+let btn = document.querySelectorAll('button')[0]
+
+btn.addEventListener('click', function () {
+    
+})
